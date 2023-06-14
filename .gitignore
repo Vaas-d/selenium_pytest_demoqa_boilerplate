@@ -1,0 +1,9 @@
+.env
+__pycache__
+Snippets.py
+.history
+/allure-results/*
+/tests/*/results/*
+/.idea/*
+/utils/snipet.py
+/tests/*/allure-results/
