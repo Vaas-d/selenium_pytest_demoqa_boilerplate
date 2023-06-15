@@ -7,3 +7,6 @@ Snippets.py
 /.idea/*
 /utils/snipet.py
 /tests/*/allure-results/
+/tests/reports/
+/reports/
+/.pytest_cache/
