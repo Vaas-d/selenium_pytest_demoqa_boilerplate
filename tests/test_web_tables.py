@@ -1,5 +1,3 @@
-import time
-
 import pytest
 
 from data.test_data import TestData
@@ -17,10 +15,10 @@ class TestWebTables:
         # click elements button on the homepage
         self.table.click_elements_button()
 
-        # click checkboxes section from the sidebar
+        # click web table section from the sidebar
         self.table.go_to_web_tables_section()
 
-    @pytest.mark.one
+    @pytest.mark.e2e
     def test_web_tables(self, test_setup):
         """Test to verify interaction with web table on the page
 
@@ -36,7 +34,8 @@ class TestWebTables:
             department=TestData.user["department"],
         )
 
-        index, text = self.table.get_row_number()
+        take_screenshot(self.driver, "new_user")
+
+        text = self.table.get_row_text()
         for value in TestData.user.values():
             assert value in text
-

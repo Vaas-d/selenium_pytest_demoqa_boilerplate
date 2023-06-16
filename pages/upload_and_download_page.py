@@ -3,15 +3,13 @@ import time
 from selenium.webdriver.common.by import By
 
 from pages.elements_page import ElementsPage
-from pages.sidebar import Sidebar
 from utils.UIObject import UIObject
 
 
-class UploadAndDownloadPage(ElementsPage, Sidebar):
+class UploadAndDownloadPage(ElementsPage):
 
     def __init__(self, driver):
         ElementsPage.__init__(self, driver)
-        Sidebar.__init__(self)
 
         self.driver = driver
 

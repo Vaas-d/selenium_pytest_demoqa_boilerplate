@@ -22,7 +22,7 @@ class Browser:
             options.add_argument("--window-size=1920x1080")
             options.add_argument("--disable-gpu")
             options.add_argument("--incognito")
-            options.add_argument("ignore-certificate-errors")
+            options.add_argument("--ignore-certificate-errors")
             options.add_argument("--ignore-ssl-errors")
             options.add_argument("--disable-infobars")
             options.add_argument("--ignore-certificate-errors-spki-list")

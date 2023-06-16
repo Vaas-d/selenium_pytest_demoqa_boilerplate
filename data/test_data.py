@@ -8,8 +8,6 @@ class TestData:
 
     dynamic_click_message = "You have done a dynamic click"
 
-    colors = ["Green", "Blue", "Black", "Red"]
-
     username = "test_user"
 
     email = "email@gmail.com"

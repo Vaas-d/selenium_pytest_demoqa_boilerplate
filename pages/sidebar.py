@@ -14,7 +14,6 @@ class Sidebar:
         self.__web_tables_section_button = UIObject(By.XPATH, '(//li[@id="item-3"])[1]')
         self.__buttons_section_button = UIObject(By.XPATH, '(//*[@id="item-4"])[1]/span')
         self.__links_section_button = UIObject(By.XPATH, '(//li[@id="item-5"])[1]')
-        self.__broken_links_section_button = UIObject(By.XPATH, '(//li[@id="item-6"])[1]')
         self.__upload_section_button = UIObject(By.XPATH, '(//li[@id="item-7"])[1]')
         self.__dynamic_props_section_button = UIObject(By.XPATH, '(//li[@id="item-8"])[1]')
 
@@ -37,9 +36,6 @@ class Sidebar:
 
     def go_to_links_section(self) -> None:
         self.__links_section_button.click()
-
-    def go_to_broken_links_section(self) -> None:
-        self.__broken_links_section_button.click()
 
     def go_to_upload_section(self) -> None:
         self.__upload_section_button.click()

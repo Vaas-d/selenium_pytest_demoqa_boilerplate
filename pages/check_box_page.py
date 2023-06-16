@@ -1,15 +1,13 @@
 from selenium.webdriver.common.by import By
 
 from pages.elements_page import ElementsPage
-from pages.sidebar import Sidebar
 from utils.UIObject import UIObject
 
 
-class CheckBoxPage(ElementsPage, Sidebar):
+class CheckBoxPage(ElementsPage):
 
     def __init__(self, driver):
         ElementsPage.__init__(self, driver)
-        Sidebar.__init__(self)
 
         self.driver = driver
         self.__home_chevron = UIObject(By.CSS_SELECTOR, '[class="rct-text"] > [aria-label="Toggle"]')
@@ -33,6 +31,7 @@ class CheckBoxPage(ElementsPage, Sidebar):
     def select_checkbox(self, name) -> None:
         checkbox = UIObject(By.CSS_SELECTOR, f'label[for="tree-node-{name.lower()}"] > [class="rct-checkbox"]')
         checkbox.click()
+        assert "check" in checkbox.get_attribute("class")
 
     def get_checkbox_text(self) -> list:
         results = []

@@ -1,15 +1,13 @@
 from selenium.webdriver.common.by import By
 
 from pages.elements_page import ElementsPage
-from pages.sidebar import Sidebar
 from utils.UIObject import UIObject
 
 
-class WebTablePage(ElementsPage, Sidebar):
+class WebTablePage(ElementsPage):
 
     def __init__(self, driver):
         ElementsPage.__init__(self, driver)
-        Sidebar.__init__(self)
 
         self.driver = driver
 
@@ -69,9 +67,9 @@ class WebTablePage(ElementsPage, Sidebar):
     def __submit_form(self) -> None:
         self.__submit_btn.click()
 
-    def get_row_number(self) -> tuple:
-        elements = self.__table_row.get_all_elements()
-        elements.reverse()
-        for element in elements:
-            if "       " not in element.text:
-                return elements.index(element), element.text.split("\n")
+    def get_row_text(self) -> tuple:
+        rows_data = self.__table_row.get_all_elements()
+        rows_data.reverse()
+        for row in rows_data:
+            if "       " not in row.text:
+                return row.text.split("\n")

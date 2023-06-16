@@ -1,18 +1,16 @@
 from selenium.webdriver.common.by import By
 
 from pages.elements_page import ElementsPage
-from pages.sidebar import Sidebar
 from utils.UIObject import UIObject
 
 
-class TextBoxPage(ElementsPage, Sidebar):
+class TextBoxPage(ElementsPage):
 
     def __init__(self, driver):
         ElementsPage.__init__(self, driver)
-        Sidebar.__init__(self)
 
         self.driver = driver
-        # form
+        # input form
         self.__full_name_input = UIObject(By.CSS_SELECTOR, '[id="userName"]')
         self.__email_input = UIObject(By.CSS_SELECTOR, '[id="userEmail"]')
         self.__current_address_input = UIObject(By.CSS_SELECTOR, 'textarea[id="currentAddress"]')

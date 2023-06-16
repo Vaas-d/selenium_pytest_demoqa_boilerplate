@@ -21,7 +21,7 @@ class TestRadioButtons:
 
         time.sleep(3)
 
-    @pytest.mark.one
+    @pytest.mark.regression
     def test_radio_buttons(self, test_setup):
         """Test to verify the radio buttons on the page
 

@@ -18,6 +18,7 @@ class TestTextBoxes:
         # click test boxes section from the sidebar
         self.text_box.go_to_text_box_section()
 
+    @pytest.mark.regression
     def test_text_boxes(self, test_setup):
         """Test to verify the input fields and output form on the page
 

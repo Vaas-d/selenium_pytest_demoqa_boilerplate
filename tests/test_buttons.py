@@ -3,7 +3,6 @@ import time
 import pytest
 
 from pages.buttons_page import ButtonsPage
-from pytest import mark
 from data.test_data import TestData
 from utils.tools import take_screenshot
 
@@ -22,7 +21,8 @@ class TestButtons:
         self.buttons.go_to_buttons_section()
         time.sleep(3)
 
-    # @mark.one
+    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_double_click_button(self, test_setup):
         """Test to verify the functionality of the double click button
 
@@ -36,7 +36,8 @@ class TestButtons:
         assert actual_message == TestData.double_click_message
         take_screenshot(self.driver, "double_click")
 
-    # @mark.two
+    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_rmb_click_button(self, test_setup):
         """Test to verify the functionality of the Right Mouse Button click button
         :param test_setup: setting up the browser and page objects
@@ -49,6 +50,8 @@ class TestButtons:
         assert actual_message == TestData.rmb_click_message
         take_screenshot(self.driver, "rmb_click")
 
+    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_dynamic_button(self, test_setup):
         """Test to verify the functionality of the dynamic button
 

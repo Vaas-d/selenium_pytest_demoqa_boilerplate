@@ -18,7 +18,8 @@ class TestCheckBoxes:
         # click checkboxes section from the sidebar
         self.checkboxes.go_to_check_box_section()
 
-    def test_text_boxes(self, test_setup):
+    @pytest.mark.regression
+    def test_checkboxes(self, test_setup):
         """Test to verify the checkboxes on the page
 
         :param test_setup: setting up the browser and page objects

@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-class TestTextBoxes:
+class TestLinks:
 
     @pytest.fixture
     def test_setup(self, new_session):
@@ -20,9 +20,10 @@ class TestTextBoxes:
         # click elements button on the homepage
         self.links.click_elements_button()
 
-        # click test boxes section from the sidebar
+        # click links section from the sidebar
         self.links.go_to_links_section()
 
+    @pytest.mark.smoke
     def test_home_link(self, test_setup):
         """Test to validate home link on the page
 
@@ -35,6 +36,7 @@ class TestTextBoxes:
         assert self.driver.current_url == os.getenv("BASE_URL")
         take_screenshot(self.driver, "new_tab")
 
+    @pytest.mark.smoke
     def test_dynamic_link(self, test_setup):
         """Test to validate dynamic link on the page
 
@@ -47,6 +49,7 @@ class TestTextBoxes:
         assert self.driver.current_url == os.getenv("BASE_URL")
         take_screenshot(self.driver, "new_tab_dynamic_link")
 
+    @pytest.mark.smoke
     def test_created_link(self, test_setup):
         """Test to validate created link on the page and verify response
 
@@ -62,6 +65,7 @@ class TestTextBoxes:
 
         take_screenshot(self.driver, "Created")
 
+    @pytest.mark.smoke
     def test_no_content_link(self, test_setup):
         """Test to validate no content link on the page and verify response
 
@@ -77,6 +81,7 @@ class TestTextBoxes:
 
         take_screenshot(self.driver, "No Content")
 
+    @pytest.mark.smoke
     def test_moved_link(self, test_setup):
         """Test to validate moved link on the page and verify response
 
@@ -92,6 +97,7 @@ class TestTextBoxes:
 
         take_screenshot(self.driver, "Moved")
 
+    @pytest.mark.smoke
     def test_bad_request_link(self, test_setup):
         """Test to validate bad request link on the page and verify response
 
@@ -107,6 +113,7 @@ class TestTextBoxes:
 
         take_screenshot(self.driver, "Bad Request")
 
+    @pytest.mark.smoke
     def test_unauthorized_link(self, test_setup):
         """Test to validate unauthorized link on the page and verify response
 
@@ -122,6 +129,7 @@ class TestTextBoxes:
 
         take_screenshot(self.driver, "Unauthorized")
 
+    @pytest.mark.smoke
     def test_forbidden_link(self, test_setup):
         """Test to validate forbidden link on the page and verify response
 
@@ -137,6 +145,7 @@ class TestTextBoxes:
 
         take_screenshot(self.driver, "Forbidden")
 
+    @pytest.mark.smoke
     def test_not_found_link(self, test_setup):
         """Test to validate not found link on the page and verify response
 

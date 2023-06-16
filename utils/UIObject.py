@@ -37,12 +37,6 @@ class UIObject:
     def get_css_property(self, value) -> str:
         return self.get_element().value_of_css_property(value)
 
-    def is_selected(self) -> bool:
-        return self.get_element().is_selected()
-
-    def is_checked(self) -> bool:
-        return Browser.get_driver().execute_script("return arguments[0].checked;", self.get_element())
-
     def exists(self, timeout: int = 1) -> bool:
         try:
             WebDriverWait(Browser.get_driver(), timeout).until(EC.presence_of_element_located((self.by, self.locator)))
