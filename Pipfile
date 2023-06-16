@@ -13,6 +13,7 @@ allure-python-commons = "*"
 selenium = "*"
 python-dotenv = "*"
 requests = "*"
+pytest-xdist = "*"
 
 [requires]
 python_version = "3.10"
