@@ -1,0 +1,114 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sat Jun 17 17:01:18 GMT 2023","Sat Jun 17 17:01:18 GMT 2023","0","tests","test_text_boxes","TestTextBoxes","","","test_text_boxes","Test to verify the input fields and output form on the page
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:00:23 GMT 2023","Sat Jun 17 17:00:23 GMT 2023","0","tests","test_dnamic_elements","TestDynamicElements","","","test_dynamic_button","Test to verify the functionality of the dynamic button. The button
+        should become enabled after 5 seconds
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 16:59:59 GMT 2023","Sat Jun 17 16:59:59 GMT 2023","0","tests","test_buttons","TestButtons","","","test_double_click_button","Test to verify the functionality of the double click button
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:00:19 GMT 2023","Sat Jun 17 17:00:19 GMT 2023","0","tests","test_dnamic_elements","TestDynamicElements","","","test_text_with_dynamic_id","Test to verify the functionality of the text field with dynamic id. The id should change each time the
+        should become enabled after 5 seconds
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:00:05 GMT 2023","Sat Jun 17 17:00:05 GMT 2023","0","tests","test_buttons","TestButtons","","","test_rmb_click_button","Test to verify the functionality of the Right Mouse Button click button
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:01:01 GMT 2023","Sat Jun 17 17:01:01 GMT 2023","0","tests","test_links","TestLinks","","","test_unauthorized_link","Test to validate unauthorized link on the page and verify response
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:01:34 GMT 2023","Sat Jun 17 17:01:34 GMT 2023","0","tests","test_web_tables","TestWebTables","","","test_web_tables","Test to verify interaction with web table on the page
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:00:57 GMT 2023","Sat Jun 17 17:00:57 GMT 2023","0","tests","test_links","TestLinks","","","test_bad_request_link","Test to validate bad request link on the page and verify response
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:01:30 GMT 2023","Sat Jun 17 17:01:30 GMT 2023","0","tests","test_upload_download","TestUploadDownload","","","test_download_file","Test to verify downloading a file
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:00:36 GMT 2023","Sat Jun 17 17:00:36 GMT 2023","0","tests","test_links","TestLinks","","","test_home_link","Test to validate home link on the page
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:00:14 GMT 2023","Sat Jun 17 17:00:14 GMT 2023","0","tests","test_check_boxes","TestCheckBoxes","","","test_checkboxes","Test to verify the checkboxes on the page
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:00:49 GMT 2023","Sat Jun 17 17:00:49 GMT 2023","0","tests","test_links","TestLinks","","","test_no_content_link","Test to validate no content link on the page and verify response
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:00:53 GMT 2023","Sat Jun 17 17:00:53 GMT 2023","0","tests","test_links","TestLinks","","","test_moved_link","Test to validate moved link on the page and verify response
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:00:27 GMT 2023","Sat Jun 17 17:00:27 GMT 2023","0","tests","test_dnamic_elements","TestDynamicElements","","","test_changing_color_button","Test to verify the functionality of the button that changes inner text color. The inner text of the button
+        should switch from back to red in 5 seconds
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:00:40 GMT 2023","Sat Jun 17 17:00:40 GMT 2023","0","tests","test_links","TestLinks","","","test_dynamic_link","Test to validate dynamic link on the page
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:01:06 GMT 2023","Sat Jun 17 17:01:06 GMT 2023","0","tests","test_links","TestLinks","","","test_forbidden_link","Test to validate forbidden link on the page and verify response
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:00:31 GMT 2023","Sat Jun 17 17:00:31 GMT 2023","0","tests","test_dnamic_elements","TestDynamicElements","","","test_appearing_button","Test to verify the functionality of the hidden button. The button
+        should become visible after 5 seconds
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:01:10 GMT 2023","Sat Jun 17 17:01:10 GMT 2023","0","tests","test_links","TestLinks","","","test_not_found_link","Test to validate not found link on the page and verify response
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:01:14 GMT 2023","Sat Jun 17 17:01:14 GMT 2023","0","tests","test_radio_buttons","TestRadioButtons","","","test_radio_buttons","Test to verify the radio buttons on the page
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:00:44 GMT 2023","Sat Jun 17 17:00:44 GMT 2023","0","tests","test_links","TestLinks","","","test_created_link","Test to validate created link on the page and verify response
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:00:09 GMT 2023","Sat Jun 17 17:00:09 GMT 2023","0","tests","test_buttons","TestButtons","","","test_dynamic_button","Test to verify the functionality of the dynamic button
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
+"broken","Sat Jun 17 17:01:26 GMT 2023","Sat Jun 17 17:01:26 GMT 2023","0","tests","test_upload_download","TestUploadDownload","","","test_upload_file","Test to verify the uploading a file
+
+        :param test_setup: setting up the browser and page objects
+        :return: None
+        "
