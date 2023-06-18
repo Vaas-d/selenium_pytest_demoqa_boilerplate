@@ -19,7 +19,7 @@ class Browser:
         def get_driver():
             options = webdriver.ChromeOptions()
             options.add_argument("--headless=new")  # Don't forget to enable before pushing to the repo
-            options.add_argument("--window-size=1920x1080")
+            options.add_argument("--window-size=1920,1080")
             options.add_argument("--disable-gpu")
             options.add_argument("--incognito")
             options.add_argument("--ignore-certificate-errors")
