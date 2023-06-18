@@ -32,7 +32,7 @@ class Browser:
             options.add_argument("--no-sandbox")
             options.add_argument("--disable-dev-shm-usage")
             options.add_experimental_option("excludeSwitches", ["enable-automation", "enable-logging"])
-            prefs = {"download.default_directory": f"{ROOT_DIR}\\data",
+            prefs = {"download.default_directory": f"{ROOT_DIR}",
                      "profile.default_content_settings": {"images": 2}}
             options.add_experimental_option("prefs", prefs)
             driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)

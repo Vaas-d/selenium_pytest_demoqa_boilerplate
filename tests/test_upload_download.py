@@ -6,7 +6,7 @@ from pages.upload_and_download_page import UploadAndDownloadPage
 from definitions import ROOT_DIR
 from utils.tools import take_screenshot
 
-file_path = f'{ROOT_DIR}/data/sampleFile.jpeg'
+file_path = f'{ROOT_DIR}/sampleFile.jpeg'
 
 
 class TestUploadDownload:
@@ -25,7 +25,7 @@ class TestUploadDownload:
         yield
         # remove downloaded file (crucial clean up for local test runs)
         if os.path.isfile(file_path):
-            os.remove(f'{ROOT_DIR}/data/sampleFile.jpeg')
+            os.remove(f'{ROOT_DIR}/sampleFile.jpeg')
 
     @pytest.mark.regression
     def test_upload_file(self, test_setup):
