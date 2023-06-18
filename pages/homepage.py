@@ -18,35 +18,35 @@ class HomePage:
     def click_elements_button(self) -> None:
         self.__homepage_page_title.wait_to_appear()
         self.__elements_button.wait_to_appear()
-        self.__elements_button.wait_to_be_clickable()
+        self.__elements_button.scroll_into_view()
         self.__elements_button.click()
 
     def click_forms_button(self) -> None:
         self.__homepage_page_title.wait_to_appear()
         self.__forms_button.wait_to_appear()
-        self.__forms_button.wait_to_be_clickable()
+        self.__forms_button.scroll_into_view()
         self.__forms_button.click()
 
     def click_alerts_button(self) -> None:
         self.__homepage_page_title.wait_to_appear()
         self.__alerts_button.wait_to_appear()
-        self.__alerts_button.wait_to_be_clickable()
+        self.__alerts_button.scroll_into_view()
         self.__alerts_button.click()
 
     def click_widgets_button(self) -> None:
         self.__homepage_page_title.wait_to_appear()
         self.__widgets_button.wait_to_appear()
-        self.__widgets_button.wait_to_be_clickable()
+        self.__widgets_button.scroll_into_view()
         self.__widgets_button.click()
 
     def click_interactions_button(self) -> None:
         self.__homepage_page_title.wait_to_appear()
         self.__interactions_button.wait_to_appear()
-        self.__interactions_button.wait_to_be_clickable()
+        self.__interactions_button.scroll_into_view()
         self.__interactions_button.click()
 
     def click_bookstore_button(self) -> None:
         self.__homepage_page_title.wait_to_appear()
         self.__bookstore_button.wait_to_appear()
-        self.__bookstore_button.wait_to_be_clickable()
+        self.__bookstore_button.scroll_into_view()
         self.__bookstore_button.click()
