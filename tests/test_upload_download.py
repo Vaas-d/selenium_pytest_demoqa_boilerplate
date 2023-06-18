@@ -6,7 +6,7 @@ from pages.upload_and_download_page import UploadAndDownloadPage
 from definitions import ROOT_DIR
 from utils.tools import take_screenshot
 
-file_path = f'{ROOT_DIR}/data/sampleFile1.jpeg'
+file_path = f'{ROOT_DIR}/data/sampleFile.jpeg'
 
 
 class TestUploadDownload:
