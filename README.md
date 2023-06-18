@@ -9,14 +9,26 @@ Framework utilises page object model to deal with locators. UI objets helper fil
 Allure is set up as a main reporter tool. Reports are stored and displayed via GitHub Pages.
 The results of each test run are reported into a Slack Channel via GitHub Actions hook. 
 
-### 1. Install environment:
+### 1. Clone the repo:
+
+Open your terminal and run:
+
+```
+  git clone git@github.com:Vaas-d/selenium_pytest_demoqa_boilerplate.git
+```
+
+### 2. Install environment:
+
+In terminal navigate inside the projects directory and run: 
+
 ```
   python -m pip install --upgrade pip
   pip install pipenv
   pipenv install --system
 ```
 
-### 2. Run pytest tests:
+### 3. Run pytest tests:
+
 Run all set of tests:
 ```
 pytest
@@ -30,7 +42,8 @@ Run tests marked with a specific mark:
 pytest -m <name of pytest mark>
 ```
 
-### 3. Generate allure report:
+### 4. Generate allure report:
+
 Test report is generated automatically after each test run overriding the previous report. 
 Use this command to see the report:
 ```
