@@ -8,12 +8,17 @@ class HomePage:
         self.driver = driver
 
         self.__homepage_page_title = UIObject(By.CSS_SELECTOR, 'a[href="https://demoqa.com"]')
+        self.__homepage_banner = UIObject(By.CSS_SELECTOR, 'img[class="banner-image"]')
         self.__elements_button = UIObject(By.CSS_SELECTOR, 'div.home-body > div > div:nth-child(1)')
         self.__forms_button = UIObject(By.CSS_SELECTOR, 'div.home-body > div > div:nth-child(2)')
         self.__alerts_button = UIObject(By.CSS_SELECTOR, 'div.home-body > div > div:nth-child(3)')
         self.__widgets_button = UIObject(By.CSS_SELECTOR, 'div.home-body > div > div:nth-child(4)')
         self.__interactions_button = UIObject(By.CSS_SELECTOR, 'div.home-body > div > div:nth-child(6)')
         self.__bookstore_button = UIObject(By.CSS_SELECTOR, 'div.home-body > div > div:nth-child(6)')
+
+    def get_homepage_banner_text(self) -> str:
+        self.__homepage_banner.wait_to_appear()
+        return self.__homepage_banner.get_attribute("alt")
 
     def click_elements_button(self) -> None:
         self.__homepage_page_title.wait_to_appear()

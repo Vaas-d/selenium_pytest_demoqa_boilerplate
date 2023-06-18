@@ -2,6 +2,8 @@
 
 class TestData:
 
+    homepage_bunner_text = "Selenium Online Training"
+
     double_click_message = "You have done a double click"
 
     rmb_click_message = "You have done a right click"

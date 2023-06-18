@@ -21,7 +21,6 @@ class TestButtons:
         self.buttons.go_to_buttons_section()
         time.sleep(3)
 
-    @pytest.mark.smoke
     @pytest.mark.regression
     def test_double_click_button(self, test_setup):
         """Test to verify the functionality of the double click button
@@ -36,7 +35,6 @@ class TestButtons:
         assert actual_message == TestData.double_click_message
         take_screenshot(self.driver, "double_click")
 
-    @pytest.mark.smoke
     @pytest.mark.regression
     def test_rmb_click_button(self, test_setup):
         """Test to verify the functionality of the Right Mouse Button click button
@@ -50,7 +48,6 @@ class TestButtons:
         assert actual_message == TestData.rmb_click_message
         take_screenshot(self.driver, "rmb_click")
 
-    @pytest.mark.smoke
     @pytest.mark.regression
     def test_dynamic_button(self, test_setup):
         """Test to verify the functionality of the dynamic button

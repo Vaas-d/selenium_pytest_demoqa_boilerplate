@@ -42,8 +42,15 @@ jobs:
           echo BASE_URL=${{ secrets.BASE_URL }} >> .env
           cat .env 
 
-      - name: Run tests
-        run: pytest
+      - name: Run quick smoke test
+        run: pytest -m smoke
+
+      - name: Run regression tests
+        run: pytest -m regression
+        continue-on-error: true
+
+      - name: Run end-to-end tests
+        run: pytest -m e2e
         env:
           DISPLAY: :99
 

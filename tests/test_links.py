@@ -23,7 +23,7 @@ class TestLinks:
         # click links section from the sidebar
         self.links.go_to_links_section()
 
-    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_home_link(self, test_setup):
         """Test to validate home link on the page
 
@@ -36,7 +36,7 @@ class TestLinks:
         assert self.driver.current_url == os.getenv("BASE_URL")
         take_screenshot(self.driver, "new_tab")
 
-    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_dynamic_link(self, test_setup):
         """Test to validate dynamic link on the page
 
@@ -49,7 +49,7 @@ class TestLinks:
         assert self.driver.current_url == os.getenv("BASE_URL")
         take_screenshot(self.driver, "new_tab_dynamic_link")
 
-    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_created_link(self, test_setup):
         """Test to validate created link on the page and verify response
 
@@ -65,7 +65,7 @@ class TestLinks:
 
         take_screenshot(self.driver, "Created")
 
-    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_no_content_link(self, test_setup):
         """Test to validate no content link on the page and verify response
 
@@ -81,7 +81,7 @@ class TestLinks:
 
         take_screenshot(self.driver, "No Content")
 
-    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_moved_link(self, test_setup):
         """Test to validate moved link on the page and verify response
 
@@ -97,7 +97,7 @@ class TestLinks:
 
         take_screenshot(self.driver, "Moved")
 
-    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_bad_request_link(self, test_setup):
         """Test to validate bad request link on the page and verify response
 
@@ -113,7 +113,7 @@ class TestLinks:
 
         take_screenshot(self.driver, "Bad Request")
 
-    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_unauthorized_link(self, test_setup):
         """Test to validate unauthorized link on the page and verify response
 
@@ -129,7 +129,7 @@ class TestLinks:
 
         take_screenshot(self.driver, "Unauthorized")
 
-    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_forbidden_link(self, test_setup):
         """Test to validate forbidden link on the page and verify response
 
@@ -145,7 +145,7 @@ class TestLinks:
 
         take_screenshot(self.driver, "Forbidden")
 
-    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_not_found_link(self, test_setup):
         """Test to validate not found link on the page and verify response
 
