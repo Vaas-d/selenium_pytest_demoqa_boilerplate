@@ -36,3 +36,5 @@ Use this command to see the report:
 ```
 allure serve reports
 ```
+
+The actual allure report can be seen [here](https://vaas-d.github.io/selenium_pytest_demoqa_boilerplate/) 
