@@ -85,7 +85,7 @@ class TestDynamicElements:
         assert not self.dynamic.is_button_visible()
         take_screenshot(self.driver, "dynamic_button_invisible")
 
-        time.sleep(6)
+        self.dynamic.appearing_button().wait_to_appear()
 
         assert self.dynamic.is_button_visible()
         take_screenshot(self.driver, "dynamic_button_visible")

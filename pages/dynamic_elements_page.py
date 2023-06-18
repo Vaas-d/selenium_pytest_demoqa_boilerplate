@@ -27,3 +27,6 @@ class DynamicElementsPage(ElementsPage):
 
     def is_button_visible(self) -> bool:
         return self.__visible_after_5sec_button.exists()
+
+    def appearing_button(self) -> UIObject:
+        return self.__visible_after_5sec_button

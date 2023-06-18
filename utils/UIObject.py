@@ -41,7 +41,7 @@ class UIObject:
         try:
             WebDriverWait(Browser.get_driver(), timeout).until(EC.presence_of_element_located((self.by, self.locator)))
             return True
-        except ElementNotFoundError:
+        except:
             return False
 
     def is_clickable(self) -> bool:
