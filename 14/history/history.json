@@ -1,1 +1,0 @@
-{"7a6668034d06f98ada8575ea46f69698":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"ccda7821d1cfd6bb","reportUrl":"https://Vaas-d.github.io/selenium_pytest_demoqa_boilerplate/14//#testresult/ccda7821d1cfd6bb","status":"passed","time":{"start":1687075531281,"stop":1687075532929,"duration":1648}}]}}
