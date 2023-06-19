@@ -51,8 +51,6 @@ jobs:
 
       - name: Run end-to-end tests
         run: pytest -m e2e
-        env:
-          DISPLAY: :99
 
       - name: Allure Report action from marketplace
         uses: simple-elf/allure-report-action@master
